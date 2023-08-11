@@ -26,7 +26,6 @@ const filterByField = function(users, key) {
     return users.filter(userCheck);
 }
 
-
 // console.log(filterByField(users, "isAstronaut")); 
 // [{ username: "Yuri Gagarin", lang:"ru", isAstronaut: true, }, 
 // { username: "Nil Armstrong, lang: "ENG" }]

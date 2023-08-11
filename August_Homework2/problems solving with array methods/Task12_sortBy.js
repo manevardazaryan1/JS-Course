@@ -5,7 +5,6 @@
 // - "Asc" returns a sorted array in ascending order. 
 // - "Desc" returns a sorted array in descending order. 
 
-
 function sortBy(arr, sortBy) {
     if (sortBy === 'Asc')
         arr.sort((x, y) => x - y);

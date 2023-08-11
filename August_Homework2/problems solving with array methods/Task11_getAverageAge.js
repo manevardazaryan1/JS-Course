@@ -16,7 +16,6 @@ const users = [
      },
 ];
 
-
 function getAverageAge(users) {
     const sumOfAges = (acc, user) => acc + user.age;
     

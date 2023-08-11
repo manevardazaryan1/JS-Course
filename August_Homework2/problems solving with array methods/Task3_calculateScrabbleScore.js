@@ -26,5 +26,4 @@ const calculateScrabbleScore = function(word, scoreObj) {
     return calculateScore(word);
 }
 
-
 // console.log(calculateScrabbleScore('jscourse', scoreObj)); // 15

@@ -2,17 +2,32 @@
 
 // JS unshift method implementation.
 
-Array.prototype.myUnshift = function(...items){
-    const first = items[0];
-    
-    let newArray = [...items];
-    for(let i = 0; i < this.length; ++i)
-        newArray[newArray.length] = this[i];
+// variant 1.
 
-    for(let i = 0; i < newArray.length; ++i)
-        this[i] = newArray[i];
-        
-    newArray = null;
+const unshift = function(arr, ...items){
+    arr.length += items.length;
     
-    return first;
+    for(let i = arr.length - 1; i >= 0; --i){
+        if(i < items.length) 
+            arr[i] = items[i];
+        else
+            arr[i] = arr[i - items.length];
+    }
+
+    return items[0];
+}
+
+// variant 2.
+
+Array.prototype.myUnshift = function(...items){
+    this.length += items.length;
+    
+    for(let i = this.length - 1; i >= 0; --i){
+        if(i < items.length) 
+            this[i] = items[i];
+        else
+            this[i] = this[i - items.length];
+    }
+    
+    return items[0];
 }
