@@ -20,12 +20,10 @@ const users = [
  },
 ];
 
-const filterByField = function(users, key) {
-    const userCheck = user => user[key];
-    
-    return users.filter(userCheck);
-}
+const userCheck = user => user[key];
 
-// console.log(filterByField(users, "isAstronaut")); 
+const filterByField = (users, key, callback) => users.filter(callback);
+
+// console.log(filterByField(users, "isAstronaut", userCheck)); 
 // [{ username: "Yuri Gagarin", lang:"ru", isAstronaut: true, }, 
 // { username: "Nil Armstrong, lang: "ENG" }]

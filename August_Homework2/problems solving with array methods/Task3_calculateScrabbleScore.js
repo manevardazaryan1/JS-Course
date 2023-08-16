@@ -14,16 +14,18 @@ const scoreObj = {
     'q, z': 7
 };
 
-const calculateScrabbleScore = function(word, scoreObj) {
-    const calculate = (x, y) => x + y;
+const calculate = (x, y) => x + y;
     
-    const getValue = key => scoreObj[key];
+const getValue = key => scoreObj[key];
     
-    const serachLetter = letter => Object.keys(scoreObj).find(key => key.search(letter) !== -1);
-    
-    const calculateScore = word => word.split('').map(serachLetter).map(getValue).reduce(calculate, 0);
-    
-    return calculateScore(word);
-}
+const serachLetter = letter => Object.keys(scoreObj).find(key => key.search(letter) !== -1);
 
-// console.log(calculateScrabbleScore('jscourse', scoreObj)); // 15
+const functionsObject = {
+    'calculate': calculate,
+    'getValue': getValue,
+    'serachLetter': serachLetter
+};
+
+const calculateScrabbleScore = (word, fObj) => word.split('').map(fObj.serachLetter).map(fObj.getValue).reduce(fObj.calculate, 0);
+
+// console.log(calculateScrabbleScore('jscourse', functionsObject)); // 15

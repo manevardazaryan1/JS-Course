@@ -14,11 +14,8 @@ const users = [
  },
 ];
 
-const usersFilter = function(users) {
-    const userCheck = user => user.lang !== 'ru';
-    
-    return users.filter(userCheck);
+const userCheck = user => user.lang !== 'ru';
 
-}
+const usersFilter = (users, callback) => users.filter(callback);
 
-// console.log(usersFilter(users)); // [{ username: "Nil Armstrong, lang: "ENG" }]
+// console.log(usersFilter(users, userCheck)); // [{ username: "Nil Armstrong, lang: "ENG" }]
