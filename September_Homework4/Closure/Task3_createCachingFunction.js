@@ -8,7 +8,6 @@ const createCachingFunction = function() {
         }
         
         arr.push(num);
-        
         return 'calculated';
     }
 }

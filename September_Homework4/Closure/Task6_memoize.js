@@ -22,7 +22,6 @@ const memoize = function(callback) {
         }
         
         arr.push(res);
-        
         return res + '(calculated)';
     }
 }
