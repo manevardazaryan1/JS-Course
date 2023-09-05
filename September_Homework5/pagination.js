@@ -50,3 +50,6 @@ const Pagination = {
         return this.data.slice(start, start + size);
     }
 }
+
+
+
