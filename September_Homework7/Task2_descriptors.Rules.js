@@ -1,3 +1,5 @@
-function setDescriptorRules(obj, property, descriptorsAndValuesObj) {
-    return Object.defineProperty(obj, property, descriptorsAndValuesObj);
+function setDescriptorRules(obj, descriptorsObj) {
+    newObj = {...obj};
+
+    return Object.defineProperties(newObj, descriptorsObj);
 }
