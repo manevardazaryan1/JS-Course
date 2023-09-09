@@ -1,25 +1,20 @@
-const schema = {
-    name: {
-        value: "",
-        writable: true,
-        validate: (value) => typeof value === "string",
-    },
-    
-    
-    age: {
-        value: 0,
-        writable: true,
-        validate: (value) => typeof value === "number" && value >= 18,
-    },
-};
+function validateObjectProperties(obj, schema) {
+    newObj = {};
+    let schemaKey, objKey;
+    for (key in obj) {
+        schemaKey = schema[key];
+        objKey = obj[key];
 
-const obj = {
-    name: 'Mane',
-    age: 23,
+        if (schemaKey.validate(objKey)) {
+            Object.defineProperty(newObj, key, {
+                value: objKey,
+                writable: schemaKey.writable,
+                enumerable: schemaKey.enumerable,
+            })
+        }
+    }  
+    
+    return newObj;
 }
 
-function validateObjectProperties(obj, schema){
-    for(key in obj){
-        obj[key]
-    }
-}
+
