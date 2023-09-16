@@ -6,7 +6,7 @@ const obj = {
     },
 
     set name(name) {
-        [fname, lname] = name.split(', ');
+        [fname, lname] = name.split(", ");
         this._name = [[fname, fname.length], [lname, lname.length]];
     },
 };

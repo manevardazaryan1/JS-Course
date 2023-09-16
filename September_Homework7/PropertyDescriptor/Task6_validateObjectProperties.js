@@ -1,6 +1,7 @@
 function validateObjectProperties(obj, schema) {
     newObj = {};
     let schemaKey, objKey;
+    
     for (key in obj) {
         schemaKey = schema[key];
         objKey = obj[key];

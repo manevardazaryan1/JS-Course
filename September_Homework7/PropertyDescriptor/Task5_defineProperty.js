@@ -1,4 +1,4 @@
-function extend(obj, properties){
+function extend(obj, properties) {
     return Object.defineProperties(obj, properties);
 }
 
