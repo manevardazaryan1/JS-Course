@@ -14,10 +14,9 @@ class Shiritory {
 
         this.game_over = true;
         return 'Game Over!';
-
     }
 
-    restart(){
+    restart() {
         this.words.length = 0;
     }
 }
