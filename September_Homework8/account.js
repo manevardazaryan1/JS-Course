@@ -37,7 +37,7 @@ class Account{
         return 'The action is done';
     }
 
-    static identifyAccounts(otherAccount) {
-        return Account.id === otherAccount.id;
+    static identifyAccounts(account1, account2) {
+        return account1.id === account2.id;
     }
 }
