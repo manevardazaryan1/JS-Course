@@ -21,6 +21,9 @@ function monthsInterval(date1, date2) {
             monthsArray.push(months[month]);
         }
     }
+    
+    if (monthsArray.length > 12)
+        monthsArray.length -= 1;
 
     return monthsArray;
 }
