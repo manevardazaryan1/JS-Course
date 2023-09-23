@@ -3,6 +3,5 @@ const formatDate = (date) => {
     return `${date.getDate() + 1} ${months[date.getMonth()]} ${date.getFullYear()}`;
 }
 
-const getWeekOfMonth = (date) => Math.round(date.getDate() / 7) || 1; 
 
 

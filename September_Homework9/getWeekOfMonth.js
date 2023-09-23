@@ -1,0 +1,1 @@
+const getWeekOfMonth = (date) => Math.round(date.getDate() / 7) || 1; 
