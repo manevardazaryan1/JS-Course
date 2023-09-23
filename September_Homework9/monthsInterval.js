@@ -15,9 +15,4 @@ function monthsInterval(date1, date2) {
 }
 
 
-let january = new Date(2017, 0, 1); 
-let march = new Date(2017, 2, 1 );
-console.log(monthsInterval(january, march));
-
-
 
