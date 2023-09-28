@@ -4,7 +4,3 @@ function getDay(date) {
 
     return dayArray[dayIndex];
 }
-
-console.log(getDay("12/07/2016")) //"Wednesday"
-console.log(getDay("09/04/2016")) //"Sunday"
-console.log(getDay("12/08/2011")) //"Thursday"

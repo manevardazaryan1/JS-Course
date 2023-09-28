@@ -1,16 +1,9 @@
 function dayOfYear(date) {
-    const monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-    const getDate = new Date(Date.parse(date));
-    const month = getDate.getMonth();
+    const getDate = new Date(date);
+    const startOfYear = new Date(getDate.getFullYear(), 0, 1);
+    const millisecondsPerDay = 24 * 60 * 60 * 1000;
 
-    let sumOfMonthDays = 0;
-    
-    for (let monthDay = 0; monthDay < month; ++ monthDay){
-        if (monthDay === 1 && getDate.getFullYear() % 4 === 0)
-            monthDays[monthDay] = 28;
+    const daysDifference = Math.floor((getDate - startOfYear) / millisecondsPerDay);
 
-        sumOfMonthDays += monthDays[monthDay];
-    }
-
-    return sumOfMonthDays + getDate.getDate();
+    return daysDifference + 1;
 }
