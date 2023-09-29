@@ -45,11 +45,15 @@ class University {
     }
 
     startLesson() {
-        for (const teacher of this.teachers)
-            teacher.energy -= 5;
+        for (const teacher of this.teachers){
+            if (teacher.energy > 5)
+                teacher.energy -= 5;
+        }
 
-        for (const student of this.students)
-            student.energy -= 2;
+        for (const student of this.students){
+            if (student.energy > 2)
+                student.energy -= 2;
+        }
     }
 }
 
