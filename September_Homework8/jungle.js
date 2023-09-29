@@ -5,12 +5,15 @@ class Food {
   }
   
   class Animal {
-    constructor(name, energy) {
+    constructor(name) {
       this.name = name;
-      this.energy = energy || 50;
+      this.energy = 0;
     }
   
     makeSound() {
+      if (this.energy < 3)
+        return `${this.name} says: I'm too tired.`;
+
       this.energy -= 3;
       return `${this.name} makes a sound.`;
     }
@@ -51,6 +54,9 @@ class Food {
     }
   
     makeSound() {
+      if (this.energy < 4)
+        return `${this.name} says: I'm too tired.`;
+
       this.energy -= 4;
       return `${this.name} makes a sound.`;
     }
