@@ -1,14 +1,13 @@
 // SingleLinkedList implementation.
 
-
-class Node{
+export class Node{
     constructor(value) {
         this.value = value;
         this.next = null;
     }
 }
 
-class SingleLinkedList{
+export class SingleLinkedList{
     constructor() {
         this.head = null;
         this.size = 0;
@@ -42,6 +41,22 @@ class SingleLinkedList{
         return this;
     }
 
+    pop(){
+        if (!this.size)
+            return false;
+
+        let current = this.head;
+        
+        for (let idx = 0; idx < this.size - 2; ++idx)
+            current = current.next;
+        
+        const removed = current.next;
+        current.next = null;
+        this.size -= 1;
+
+        return removed;
+    }
+
     insert(node, index) {
         if (index >= this.size)
             return false
@@ -65,7 +80,7 @@ class SingleLinkedList{
 
         const current = this.head;
 
-        for (let idx = 0; idx < index - 1; ++i)
+        for (let idx = 0; idx < index - 1; ++idx)
             current = current.next;
         
         const removed = current.next;
@@ -112,7 +127,6 @@ class SingleLinkedList{
             current = current.next;
         }
 
-        console.log('no')
         return false;
     }
 
@@ -121,7 +135,7 @@ class SingleLinkedList{
     }
 
     isEmpty() {
-        return Boolean(this.size);
+        return !this.size;
     }
 
     printList() {
