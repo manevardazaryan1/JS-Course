@@ -6,7 +6,7 @@
 // Շրջել մատրիցան այնպես որ տողերը դառնան սյուներ, իսկ սյուները՝ տողեր։
 
 function transformMatrix(matrix) {
-    const tmp;
+    let tmp;
     for (let row = 0; row < matrix.length; ++row) {
         for (let col = row; col < matrix[row].length; ++col) {
             tmp = matrix[row][col];

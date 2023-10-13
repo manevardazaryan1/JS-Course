@@ -15,7 +15,7 @@ const colSum = function(col, matrix){
 const smallerThanK = function(matrix, k, colSum) {
     const newMatrix = [];
     let bool = true;
-    let sum, count;
+    let count;
     
     for (let col = 0; col < matrix[0].length; ++col) {
         count = 0;
