@@ -2,9 +2,6 @@ const Airplane = {
     init(name) {
         this.name = name;
         this.isFlying = false;
-
-        this.takeOff.bind(this);
-        this.land.bind(this);
     },
 
     takeOff() {

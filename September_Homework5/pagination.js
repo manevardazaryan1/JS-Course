@@ -4,13 +4,6 @@ const Pagination = {
         this.pageSize = pageSize;
         this.currentPage = 1;
         this.lastPageNumber = Math.round(this.data.length / this.pageSize);
-
-        this.prevPage.bind(this);
-        this.nextPage.bind(this);
-        this.firstPage.bind(this);
-        this.lastPage.bind(this);
-        this.goToPage.bind(this);
-        this.getPageItems.bind(this);
     },
 
     prevPage() {
