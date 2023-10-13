@@ -13,14 +13,13 @@ class Users{
     }
 
     addUsers(users) {
-        if (users){
+        if (users) {
             for (let idx = 0; idx < users.length; ++idx){
                 const id = this.users.get(users[idx]['id']);
                 const emails = Array.from(this.users.values());
 
-                if (!id && !emails.includes(users[idx]['email'])) {
+                if (!id && !emails.includes(users[idx]['email'])) 
                     this.users.set(users[idx]['id'], users[idx]);
-                }
             }
         }
     }
