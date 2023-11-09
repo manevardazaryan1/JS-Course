@@ -49,11 +49,13 @@
             <section class="posts_section">
                 <div class="container">
                     <div class="posts">
+                        <h2>Pictures</h2>
                         <div class="post">
                             <div class="post_image">
                                 <img src="./images/posts/Arearea.webp" alt="Arearea">
                             </div>
                             <div class="post_content">
+                                <h4>Arearea</h4>
                                 <p>1892 work by French painter Paul Gauguin. It was one of the works Gauguin exhibited at his 1893 Durand-Ruel exhibition in Paris. It was bequeathed to the French state in 1961, and was in the collection of the Louvre. From 1986, the painting has been in the collection of the Musée d'Orsay. The prominence in his paintings of collarless free range dogs has been the subject of much speculation as to their symbolic or metaphorical meaning.</p>
                                 <a href="#">Detail</a>
                             </div>
@@ -63,6 +65,7 @@
                                 <img src="./images/posts/BlueDancers.webp" alt="BlueDancers">
                             </div>
                             <div class="post_content">
+                                <h4>Blue Dancers</h4>
                                 <p>1897 pastel by Edgar Degas. It is held in the Pushkin Museum, in Moscow, which it entered in 1948 from the State Museum of Modern Western Art. It was in Durand-Ruel's collection and then until 1918 in Sergei Shchukin's collection in Moscow.</p>
                                 <a href="#">Detail</a>
                             </div>
@@ -72,6 +75,7 @@
                                 <img src="./images/posts/GirlWithAPearlEarring.webp" alt="GirlWithAPearlEarring">
                             </div>
                             <div class="post_content">
+                                <h4>Girl With A Pearl Earring</h4>
                                 <p>Oil painting by Dutch Golden Age painter Johannes Vermeer, dated c. 1665. Going by various names over the centuries, it became known by its present title towards the end of the 20th century after the earring worn by the girl portrayed there. The work has been in the collection of the Mauritshuis in The Hague since 1902 and has been the subject of various literary and cinematic treatments.</p>
                                 <a href="#">Detail</a>
                             </div>
@@ -81,6 +85,7 @@
                                 <img src="./images/posts/ImpressionSunrise.webp" alt="ImpressionSunrise">
                             </div>
                             <div class="post_content">
+                                <h4>Impression, Sunrise</h4>
                                 <p>1872 painting by Claude Monet first shown at what would become known as the "Exhibition of the Impressionists" in Paris in April, 1874. The painting is credited with inspiring the name of the Impressionist movement. Impression, Sunrise depicts the port of Le Havre, Monet's hometown.</p>
                                 <a href="#">Detail</a>
                             </div>
@@ -90,6 +95,7 @@
                                 <img src="./images/posts/StarryNight.webp" alt="StarryNight">
                             </div>
                             <div class="post_content">
+                                <h4>StarryNight</h4>
                                 <p>Oil-on-canvas painting by the Dutch Post-Impressionist painter Vincent van Gogh. Painted in June 1889, it depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an imaginary village. It has been in the permanent collection of the Museum of Modern Art in New York City since 1941, acquired through the Lillie P. Bliss Bequest. Widely regarded as Van Gogh's magnum opus, The Starry Night is one of the most recognizable paintings in Western art.</p>
                                 <a href="#">Detail</a>
                             </div>
@@ -99,6 +105,7 @@
                                 <img src="./images/posts/TheDayDream.webp" alt="TheDayDream">
                             </div>
                             <div class="post_content">
+                                <h4>The Day Dream</h4>
                                 <p>Oil-on-canvas painting by the Dutch Post-Impressionist painter Vincent van Gogh. Painted in June 1889, it depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an imaginary village. It has been in the permanent collection of the Museum of Modern Art in New York City since 1941, acquired through the Lillie P. Bliss Bequest. Widely regarded as Van Gogh's magnum opus, The Starry Night is one of the most recognizable paintings in Western art.</p>
                                 <a href="#">Detail</a>
                             </div>
@@ -109,7 +116,8 @@
 
             <section class="contact_section">
                 <div class="container">
-                    <form action="validate.js" method="post" name="contact_form">
+                    <h3>Contact</h3>
+                    <form action="validate.*" method="post" name="contact_form" class="form contact_form">
                         <div class="form_item form_input">
                             <label for="first_name">First Name</label>
                             <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
@@ -137,7 +145,47 @@
                 </div>
             </section>
         </section>
-        <footer></footer>
+        <footer>
+            <div class="footer_column">
+                <div class="logo">
+                    <a href="#"><img src="./images/logo/logo.png" alt="galleryLogo"></a>
+                </div>
+            </div>
+            <div class="footer_column">
+                <h4>Categories</h4>
+                <ul class="footer_links">
+                    <li><a href="#">Impressionism</a></li>
+                    <li><a href="#">Fresco painting</a></li>
+                    <li><a href="#">Realism</a></li>
+                    <li><a href="#">Surrealism</a></li>
+                    <li><a href="#">Expressionism</a></li>
+                    <li><a href="#">Pop art</a></li>
+                    <li><a href="#">Tempera</a></li>
+                </ul>
+            </div>
+            <div class="footer_column">
+                <h4>Menu</h4>
+                <ul class="footer_links">
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer_column">
+                <h4>Subscribe</h4>
+                <form action="subscribe.*" name="subscribe" method="post" class="form subscribe_form">
+                    <div class="form_item form_input">
+                        <label for="subscribe">Subscribe</label>
+                        <input type="email" name="subscribe" id="subscribe" placeholder="Subscribe" required>
+                    </div>
+                    <div class="form_item submit_button">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </footer>
     </main>
 </body>
 </html>
