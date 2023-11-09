@@ -60,7 +60,7 @@
                         </div>
                         <div class="post">
                             <div class="post_image">
-                                <img src="./images/posts/BlueDancers.webp" alt="Arearea">
+                                <img src="./images/posts/BlueDancers.webp" alt="BlueDancers">
                             </div>
                             <div class="post_content">
                                 <p>1897 pastel by Edgar Degas. It is held in the Pushkin Museum, in Moscow, which it entered in 1948 from the State Museum of Modern Western Art. It was in Durand-Ruel's collection and then until 1918 in Sergei Shchukin's collection in Moscow.</p>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="post">
                             <div class="post_image">
-                                <img src="./images/posts/GirlWithAPearlEarring.webp" alt="Arearea">
+                                <img src="./images/posts/GirlWithAPearlEarring.webp" alt="GirlWithAPearlEarring">
                             </div>
                             <div class="post_content">
                                 <p>Oil painting by Dutch Golden Age painter Johannes Vermeer, dated c. 1665. Going by various names over the centuries, it became known by its present title towards the end of the 20th century after the earring worn by the girl portrayed there. The work has been in the collection of the Mauritshuis in The Hague since 1902 and has been the subject of various literary and cinematic treatments.</p>
@@ -96,7 +96,7 @@
                         </div>
                         <div class="post">
                             <div class="post_image">
-                                <img src="./images/posts/TheDayDream.webp" alt="StarryNight">
+                                <img src="./images/posts/TheDayDream.webp" alt="TheDayDream">
                             </div>
                             <div class="post_content">
                                 <p>Oil-on-canvas painting by the Dutch Post-Impressionist painter Vincent van Gogh. Painted in June 1889, it depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an imaginary village. It has been in the permanent collection of the Museum of Modern Art in New York City since 1941, acquired through the Lillie P. Bliss Bequest. Widely regarded as Van Gogh's magnum opus, The Starry Night is one of the most recognizable paintings in Western art.</p>
@@ -108,8 +108,36 @@
             </section>
 
             <section class="contact_section">
+
+            </section>
+
+            <section class="contact_section">
                 <div class="container">
-                    
+                    <form action="validate.js" method="post" name="contact_form">
+                        <div class="form_item form_input">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+                        </div>
+                        <div class="form_item form_input">
+                            <label for="second_name">Second Name</label>
+                            <input type="text" name="second_name" id="second_name" placeholder="Second Name" required>
+                        </div>
+                        <div class="form_item form_input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form_item form_input">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Password" required>
+                        </div>
+                        <div class="form_item form_textarea">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="form_item submit_button">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
                 </div>
             </section>
         </section>
